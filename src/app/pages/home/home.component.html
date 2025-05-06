@@ -1,0 +1,6 @@
+<ul>
+    <li *ngFor="let conv of conversations">
+      <a [routerLink]="['/conversation', conv]">{{ conv }}</a>
+    </li>
+  </ul>
+  

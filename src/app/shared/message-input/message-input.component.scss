@@ -1,0 +1,85 @@
+.message-input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center textarea and button horizontally */
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Style the textarea */
+  .message-input-container textarea {
+    text-align: center;         /* Center the text inside textarea */
+    width: 100%;
+    max-width: 400px;           /* Limit width for responsiveness */
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: vertical;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  /* Style the button */
+  .message-input-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  
+  textarea:focus {
+    border-color: #007bff; /* Blue border when focused */
+    background-color: #fff; /* White background when focused */
+  }
+  
+  button {
+    padding: 10px 15px; /* Adds padding inside the button */
+    background-color: #007bff; /* Blue background */
+    color: white; /* White text */
+    border: none; /* Removes border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    width: 52%; 
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 600px) {
+    textarea {
+      font-size: 14px; /* Smaller font size for mobile */
+      padding: 10px; /* Less padding for mobile */
+    }
+  
+    button {
+      font-size: 14px; /* Smaller button font size */
+      padding: 10px 12px; /* Adjust padding for mobile */
+    }
+  }
+  
+  /* Responsive Design for Tablets and Small Laptops */
+  @media (min-width: 600px) and (max-width: 1024px) {
+    textarea {
+      font-size: 15px; /* Medium font size for tablet/small laptop */
+      padding: 11px; /* Adjust padding */
+    }
+  
+    button {
+      font-size: 15px; /* Medium button font size */
+      padding: 10px 14px; /* Adjust padding for tablets */
+    }
+  }
+  

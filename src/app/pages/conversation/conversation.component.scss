@@ -1,0 +1,103 @@
+/* General Layout Styles */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  div {
+    background-color: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #333;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .app-message-input {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    outline: none;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #007bff;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design for Mobile */
+  @media (max-width: 600px) {
+    h2 {
+      font-size: 20px; /* Smaller font size for mobile */
+    }
+  
+    div {
+      padding: 8px;
+      font-size: 14px;
+    }
+  
+    input[type="text"] {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  
+  /* Responsive Design for Tablets and Small Laptops */
+  @media (min-width: 600px) and (max-width: 1024px) {
+    h2 {
+      font-size: 22px; /* Medium font size for tablet/small laptop */
+    }
+  
+    div {
+      padding: 10px;
+      font-size: 15px;
+    }
+  
+    input[type="text"] {
+      font-size: 15px;
+      padding: 9px;
+    }
+  
+    button {
+      font-size: 15px;
+      padding: 9px 13px;
+    }
+  }
+  

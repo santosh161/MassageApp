@@ -1,0 +1,9 @@
+<!-- app.component.html -->
+<div *ngIf="authService.isAuthenticated()">
+  <nav class="navbar">
+    <span>Messaging App</span>
+    <button (click)="logout()">Logout</button>
+  </nav>
+</div>
+
+<router-outlet></router-outlet>

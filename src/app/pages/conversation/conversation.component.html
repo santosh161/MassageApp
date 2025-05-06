@@ -1,0 +1,8 @@
+<h2>{{ conversationId }} Conversation</h2>
+<div *ngFor="let msg of messages">{{ msg }}</div>
+<app-message-input
+  [conversationId]="conversationId"
+  [initialDraft]="draft"
+  (send)="sendMessage($event)"
+  (draftChange)="saveDraft($event)">
+</app-message-input>
