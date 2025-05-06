@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 export class ConversationComponent implements OnInit {
 
   conversationId = '';
-  messages: string[] = [];
+  userMessages: string[] = [];
   draft = '';
   
   constructor(private route: ActivatedRoute) {}
@@ -22,13 +22,13 @@ export class ConversationComponent implements OnInit {
   
   loadMessages() {
     const data = localStorage.getItem(`messages-${this.conversationId}`);
-    this.messages = data ? JSON.parse(data) : [];
+    this.userMessages = data ? JSON.parse(data) : [];
   }
   
   sendMessage(newMsg: string) {
     if (!newMsg) return;
-    this.messages.push(newMsg);
-    localStorage.setItem(`messages-${this.conversationId}`, JSON.stringify(this.messages));
+    this.userMessages.push(newMsg);
+    localStorage.setItem(`messages-${this.conversationId}`, JSON.stringify(this.userMessages));
     localStorage.removeItem(`draft-${this.conversationId}`);
   }
   

@@ -1,42 +1,62 @@
-/* General Styles */
-ul {
-    list-style-type: none; /* Removes default list styling */
-    padding: 0;
-    margin: 0;
+
+
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  padding: 16px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+
+th, td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
   }
-  
-  li {
-    margin: 10px 0; /* Adds space between list items */
+
+  tr {
+    margin-bottom: 15px;
   }
-  
-  a {
-    text-decoration: none; /* Removes the underline from links */
-    color: #007bff; /* Sets link color */
-    font-size: 18px; /* Adjust font size */
-    display: block; /* Makes the entire area clickable */
-    padding: 10px; /* Adds padding around the text */
-    background-color: #f8f9fa; /* Light background for list items */
-    border-radius: 8px; /* Rounded corners for list items */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition on hover */
+
+  td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
   }
-  
-  a:hover {
-    background-color: #007bff; /* Background color on hover */
-    color: white; /* Text color on hover */
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 16px;
+    font-weight: bold;
+    text-align: left;
   }
-  
-  /* Responsive Design for Mobile */
-  @media (max-width: 600px) {
-    a {
-      font-size: 16px; /* Smaller text on mobile */
-      padding: 8px; /* Adjust padding */
-    }
+
+  th {
+    display: none;
   }
-  
-  @media (min-width: 600px) and (max-width: 1024px) {
-    a {
-      font-size: 17px; 
-      padding: 12px;
-    }
-  }
+}
+
   

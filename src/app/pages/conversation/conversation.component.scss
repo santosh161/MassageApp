@@ -1,4 +1,4 @@
-/* General Layout Styles */
+
 h2 {
     font-size: 24px;
     color: #333;
@@ -57,10 +57,9 @@ h2 {
     background-color: #0056b3;
   }
   
-  /* Responsive Design for Mobile */
   @media (max-width: 600px) {
     h2 {
-      font-size: 20px; /* Smaller font size for mobile */
+      font-size: 20px; 
     }
   
     div {
@@ -79,10 +78,9 @@ h2 {
     }
   }
   
-  /* Responsive Design for Tablets and Small Laptops */
   @media (min-width: 600px) and (max-width: 1024px) {
     h2 {
-      font-size: 22px; /* Medium font size for tablet/small laptop */
+      font-size: 22px;
     }
   
     div {

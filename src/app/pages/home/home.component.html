@@ -1,6 +1,21 @@
-<ul>
-    <li *ngFor="let conv of conversations">
-      <a [routerLink]="['/conversation', conv]">{{ conv }}</a>
-    </li>
-  </ul>
+
+
+   <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>Conversation</th>
+          <th>User Message</th>
+          <th>Updated At</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let conv of conversations">
+          <td><a [routerLink]="['/conversation', conv.name]">{{ conv.name }}</a></td>
+          <td>{{ conv.userMessage }}</td>
+          <td>{{ conv.updatedAt }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
   
